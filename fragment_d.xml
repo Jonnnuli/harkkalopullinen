@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70B7E6"
+    tools:context=".fragments.FragmentD">
+
+    <TextView
+        android:id="@+id/textViewDead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuolleet Lutemonit:" />
+
+    <TextView
+        android:id="@+id/textLutemonsDead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageViewDeadL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="200dp"
+        />
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9DD90"
+    tools:context=".fragments.FragmentB">
+
+    <TextView
+        android:id="@+id/textViewHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaikki Lutemonit:"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/checkBoxesB"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="255dp"
+        android:text="Siirrä valitut Lutemonit harjoittelualueelle"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonMoveB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Siirrä" />
+
+    <TextView
+        android:id="@+id/textViewLTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lutemonit harjoittelualueella:"
+        android:layout_marginTop="370dp"/>
+    <TextView
+        android:id="@+id/textViewToTraining1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="400dp"/>
+
+</FrameLayout>

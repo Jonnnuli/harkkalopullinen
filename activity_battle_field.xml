@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BattleFieldActivity">
+
+    <TextView
+        android:id="@+id/textViewAttack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hyökkäys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAttack1"
+        app:layout_constraintTop_toBottomOf="@+id/textLutemon2" />
+
+    <TextView
+        android:id="@+id/textViewPickLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valitse 2 Lutemonia taisteluun:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBoxes"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPickLutemons"
+        tools:layout_editor_absoluteX="88dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/buttonStartFight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startBattle"
+        android:text="Aloita taistelu!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBoxes" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Taistelussa:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStartFight" />
+
+    <TextView
+        android:id="@+id/textLutemon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Lutemon 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textLutemon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Lutemon 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textLutemon1"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textViewAttack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hyökkäys"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLutemon1" />
+
+    <TextView
+        android:id="@+id/textViewDefense1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puolustus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAttack1" />
+
+    <TextView
+        android:id="@+id/textViewHealth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elämä"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDefense1" />
+
+    <TextView
+        android:id="@+id/textViewExperience1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kokemus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHealth1" />
+
+    <TextView
+        android:id="@+id/textViewDefense2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puolustus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDefense1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAttack2" />
+
+    <TextView
+        android:id="@+id/textViewHealth2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elämä"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewHealth1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDefense2" />
+
+    <TextView
+        android:id="@+id/textViewExperience2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kokemus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewExperience1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHealth2" />
+
+    <ImageView
+        android:id="@+id/imageViewL1"
+        android:layout_width="77dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDefense2"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/textViewDefense1"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewL2"
+        android:layout_width="77dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/textViewDefense2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewBattleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExperience2" />
+
+    <Button
+        android:id="@+id/buttonToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchToMainActivity"
+        android:text="Etusivulle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPickTwoLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valitse Lutemonit"
+        app:layout_constraintEnd_toStartOf="@+id/buttonStartFight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBoxes" />
+
+    <ImageView
+        android:id="@+id/imageBattleL1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToMain"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageBattleL2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageBattleL1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/buttonAttack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Hyökkää1"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPickTwoLutemons" />
+
+    <Button
+        android:id="@+id/buttonAttack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Hyökkää2"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStartFight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLutemonActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valkoinen" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oranssi" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pinkki" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vihreä" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Musta" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Nimi"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/buttonAddNewLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="addLutemon"
+        android:text="Lisää lutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="Takaisin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddNewLutemon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
